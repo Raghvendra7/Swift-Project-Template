@@ -13,7 +13,7 @@ def app_pods
   pod 'RxAlamofire' 
   pod 'RxCocoa'
   pod 'RxSwift'
-end
+
 
 def test_pods
   pod 'Quick'
