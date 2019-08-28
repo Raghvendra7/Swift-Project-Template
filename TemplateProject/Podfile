@@ -9,15 +9,15 @@ pod 'SwiftGen'
 def app_pods
   pod 'SnapKit'
   pod 'Alamofire'
-  pod 'R.swift',
-  pod 'RxAlamofire', 
-  pod 'RxCocoa', 
-  pod 'RxSwift',
+  pod 'R.swift'
+  pod 'RxAlamofire' 
+  pod 'RxCocoa'
+  pod 'RxSwift'
 end
 
 def test_pods
-  pod 'Quick', '~> 1.0'
-  pod 'Nimble', '~> 7.0'
+  pod 'Quick'
+  pod 'Nimble'
 end
 
 target 'MyProject' do
