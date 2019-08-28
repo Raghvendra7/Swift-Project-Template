@@ -5,14 +5,28 @@ inhibit_all_warnings!
 pod 'SwiftLint'
 pod 'SwiftGen'
 
-target 'MyProject' do
 
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'SVProgressHUD'
+def app_pods
+  pod 'SnapKit'
+  pod 'Alamofire'
+  pod 'R.swift',
+  pod 'RxAlamofire', 
+  pod 'RxCocoa', 
+  pod 'RxSwift',
+end
+
+def test_pods
+  pod 'Quick', '~> 1.0'
+  pod 'Nimble', '~> 7.0'
+end
+
+target 'MyProject' do
+  app_pods
+  end
 
   target 'MyProjectTests' do
     inherit! :search_paths
+    test_pods
     # Pods for testing
   end
 
