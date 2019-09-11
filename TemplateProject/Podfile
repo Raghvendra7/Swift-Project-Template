@@ -12,7 +12,7 @@ def app_pods
   pod 'SwiftLint'
   pod 'SwiftGen'
   pod 'FLEX', '~> 3.0', :configurations => ['Debug']
-
+end
 
 def test_pods
   pod 'Quick'
@@ -21,7 +21,7 @@ end
 
 target 'MyProject' do
   app_pods
-end
+
   target 'MyProjectTests' do
     inherit! :search_paths
     test_pods
@@ -32,3 +32,4 @@ end
     inherit! :search_paths
     # Pods for testing
   end
+end
